@@ -1,7 +1,7 @@
-<img src="https://graph.org/file/4b306f4b15c23a8f22e58.jpg" alt="logo" target="/blank">
+<img src="https://graph.org/file/569a3939dd41d05e861d4-9e20ec32e90cf14ab9.jpg" alt="logo" target="/blank">
 
 <h1 align="center">
- <b><a href="https://t.me/autorenamexbot" target="/blank"> Auto Rename Bot </a></>
+ <b><a href="https://t.me/AstaRenamerxRobot" target="/blank"> Auto Rename Bot </a></>
 </h1>
 
 <p align="center">🩵 Thanks for Being Here 🩵</p>
