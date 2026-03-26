@@ -1,4 +1,4 @@
-<img src="https://graph.org/file/569a3939dd41d05e861d4-9e20ec32e90cf14ab9.jpg" alt="logo" target="/blank">
+<img src="https://telegra.ph/file/87ac898d35bf432e7fee8-16e222e188509e8180.jpg" alt="logo" target="/blank">
 
 <h1 align="center">
  <b><a href="https://t.me/AstaRenamerxRobot" target="/blank"> Auto Rename Bot </a></>
