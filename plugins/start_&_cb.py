@@ -10,13 +10,13 @@ async def start(client, message):
     user = message.from_user
     await madflixbotz.add_user(client, message)                
     button = InlineKeyboardMarkup([[
-      InlineKeyboardButton('📢 Updates', url='https://t.me/Madflix_Bots'),
-      InlineKeyboardButton('💬 Support', url='https://t.me/MadflixBots_Support')
+      InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/CodeifyBots'),
+      InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/+H5X2Wlj8DZo3NTY1')
     ],[
-      InlineKeyboardButton('⚙️ Help', callback_data='help'),
-      InlineKeyboardButton('💙 About', callback_data='about')
+      InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+      InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
     ],[
-        InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/CallAdminRobot')
+        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/TgContactxBot')
     ]])
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
@@ -33,13 +33,13 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.START_TXT.format(query.from_user.mention),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton('📢 Updates', url='https://t.me/Madflix_Bots'),
-                InlineKeyboardButton('💬 Support', url='https://t.me/MadflixBots_Support')
-                ],[
-                InlineKeyboardButton('⚙️ Help', callback_data='help'),
-                InlineKeyboardButton('💙 About', callback_data='about')
-                ],[
-                InlineKeyboardButton("🧑‍💻 Developer 🧑‍💻", url='https://t.me/CallAdminRobot')
+                InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/CodeifyBots'),
+                InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/+H5X2Wlj8DZo3NTY1')
+             ],[
+                InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
+                InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+             ],[
+                InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url='https://t.me/TgContactxBot')
                 ]])
         )
     elif data == "caption":
@@ -47,8 +47,8 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.CAPTION_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("✖️ Close", callback_data="close"),
-                InlineKeyboardButton("🔙 Back", callback_data="help")
+                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
             ]])            
         )
     elif data == "help":
@@ -56,22 +56,22 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.HELP_TXT.format(client.mention),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("⚙️ Setup AutoRename Format ⚙️", callback_data='file_names')
+                InlineKeyboardButton("𝗦𝗲𝘁𝘂𝗽 𝗔𝘂𝘁𝗼𝗥𝗲𝗻𝗮𝗺𝗲 𝗙𝗼𝗿𝗺𝗮𝘁", callback_data='file_names')
                 ],[
-                InlineKeyboardButton('🖼️ Thumbnail', callback_data='thumbnail'),
-                InlineKeyboardButton('✏️ Caption', callback_data='caption')
+                InlineKeyboardButton('ᴛʜᴜᴍʙɴᴀɪʟ', callback_data='thumbnail'),
+                InlineKeyboardButton('ᴄᴀᴘᴛɪᴏɴ', callback_data='caption')
                 ],[
-                InlineKeyboardButton('🏠 Home', callback_data='home'),
-                InlineKeyboardButton('💰 Donate', callback_data='donate')
-                ]])
+                InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
+                InlineKeyboardButton('ᴅᴏɴᴀᴛᴇ', callback_data='donate')
+                ]])  
         )
     elif data == "donate":
         await query.message.edit_text(
             text=Txt.DONATE_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("✖️ Close", callback_data="close"),
-                InlineKeyboardButton("🔙 Back", callback_data="help")
+                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
             ]])          
         )
     
@@ -81,8 +81,8 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.FILE_NAME_TXT.format(format_template=format_template),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("✖️ Close", callback_data="close"),
-                InlineKeyboardButton("🔙 Back", callback_data="help")
+                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
             ]])
         )      
     
@@ -90,8 +90,8 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_caption(
             caption=Txt.THUMBNAIL_TXT,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("✖️ Close", callback_data="close"),
-                InlineKeyboardButton("🔙 Back", callback_data="help"),
+                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
             ]]),
         )
 
@@ -100,8 +100,8 @@ async def cb_handler(client, query: CallbackQuery):
             text=Txt.ABOUT_TXT,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-                InlineKeyboardButton("✖️ Close", callback_data="close"),
-                InlineKeyboardButton("🔙 Back", callback_data="home")
+                InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close"),
+                InlineKeyboardButton("ʙᴀᴄᴋ", callback_data="help")
             ]])          
         )
     
